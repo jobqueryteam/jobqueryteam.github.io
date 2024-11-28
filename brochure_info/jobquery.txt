@@ -1,0 +1,5 @@
+Jerry Su, Preston Peck, Sungjoo Han, Yajie Chen, Zach Elsasser 
+
+JobQuery is designed to streamline and elevate the job search process for early career professionals. Targeting top internships and opportunities for current college students and new graduates, JobQuery specifically addresses the unique challenges faced by this demographic. Developed by a team of students who deeply understand the rigors of job hunting, JobQuery aims to transform this daunting process into a seamless and rewarding experience.
+
+https://jobqueryteam.github.io/
