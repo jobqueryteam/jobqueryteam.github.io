@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobQuery Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="bg-blue-600 text-white p-6 shadow-lg">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold">JobQuery</h1>
+            <p class="mt-2 text-lg">A simple guide to understanding and implementing the project.</p>
+            <p class="mt-2 text-lg">Learn more about the team by clicking <a class="text-red-500 font-bold" href="../index.html">here</a>.</p>
+        </div>
+    </header>
+
+    <!-- Content Section -->
+    <main class="container mx-auto my-10 px-4">
+        <!-- Abstract Section -->
+        <section class="bg-white shadow-lg rounded-lg p-6 mb-8">
+            <h2 class="text-2xl font-semibold mb-4 border-b-2 border-blue-600 pb-2">Abstract</h2>
+            <p class="text-gray-700 leading-relaxed">
+                JobQuery is designed to streamline and elevate the job search process for early career professionals.
+                Targeting top internships and opportunities for current college students and new graduates, JobQuery
+                specifically addresses the unique challenges faced by this demographic. Developed by a team of students
+                who deeply understand the rigors of job hunting, JobQuery aims to transform this daunting process into a
+                seamless and rewarding experience.
+            </p>
+        </section>
+
+        <!-- Tutorial Steps Section -->
+        <section class="bg-white shadow-lg rounded-lg p-6 mb-8">
+            <h2 class="text-2xl font-semibold mb-4 border-b-2 border-blue-600 pb-2">Steps for running locally:</h2>
+            <ol class="list-decimal pl-6 space-y-4">
+                <li>
+                    <h3 class="text-lg font-medium">Step 1: Obtaining JobQuery source code</h3>
+                    <p class="text-gray-700">Start by downloading or cloning our repo which can be found <a
+                            class="text-blue-500 font-bold" href="../tutorial.html">here</a>.</p>
+                </li>
+                <li>
+                    <h3 class="text-lg font-medium">Step 2: Running the backend</h3>
+                    <p class="text-gray-700">Our backend uses FastAPI which is built on Python. To run the backend,
+                        first ensure you have python and <a class="text-blue-500 font-bold"
+                            href="https://python-poetry.org/docs/">poetry</a> installed. After installing these
+                        dependencies, navigate to the backend folder and create a poetry shell with <code
+                            class="text-red-500 font-bold">poetry shell</code> and install all project dependencies
+                        using <code class="text-red-500 font-bold">poetry install</code>. After this, run the following
+                        command: <code class="text-red-500 font-bold">uvicorn main:app --reload</code> to start the
+                        backend server.</p>
+                    </p>
+                </li>
+                <li>
+                    <h3 class="text-lg font-medium">Step 3: Running the frontend</h3>
+                    <p class="text-gray-700">
+                        Our frontend uses React. First ensure you <a class="text-blue-500 font-bold"
+                            href="https://docs.npmjs.com">NPM</a> installed. After installing NPM, navigate to the
+                        frontend folder and run the following command: <code
+                            class="text-red-500 font-bold">npm install</code> to install all project dependencies. After
+                        this, run <code class="text-red-500 font-bold">npm run dev</code> to start the frontend server.
+                        After this, navigate to localhost:5173 (or use whatever port it indicates) to view the frontend.
+                    </p>
+                </li>
+            </ol>
+        </section>
+
+        <section class="bg-white shadow-lg rounded-lg p-6 mb-8">
+            <h2 class="text-2xl font-semibold mb-4 border-b-2 border-blue-600 pb-2">If you do not want to run locally:</h2>
+            <p class="text-gray-700">Visit our deployed version of jobquery <a class="text-blue-500 font-bold" href="http://jobquery.zachmediaserver.com">here</a>.</p>
+        </section>
+
+        <section class="bg-white shadow-lg rounded-lg p-6 mb-8">
+            <h2 class="text-2xl font-semibold mb-4 border-b-2 border-blue-600 pb-2">How to use JobQuery:</h2>
+            <ol class="list-decimal pl-6 space-y-4">
+                <li>
+                    <h3 class="text-lg font-medium">The Homepage</h3>
+                    <p class="text-gray-700">After visiting jobquery, you will be greeted by the homepage. Until you login there isn't much functionality offered besides being able to look through the job listings. However, after logging in you will be greeting with a variety of features that can be accessed via the Menu Bar.</p>
+                </li>
+                <li>
+                    <h3 class="text-lg font-medium">Loggin In</h3>
+                    <p class="text-gray-700">To login into jobquery, press the blue "Login" button that can be see in the top right corner of the page.</p>
+                    <img src="./images/login_button.png" alt="Click the login button" width="50%" class="my-4 border-2 border-black" />
+                    <p class="text-gray-700">After logging in, you will notice some changes to the homepage such as new access to the Menu Bar. This offers new additional features. Continue reading the tutorial to find out how to access and use each of these features.</p>
+                </li>
+                <li>
+                    <h3 class="text-lg font-medium">Saving Jobs</h3>
+                    <p class="text-gray-700">While looking through the list of job listings, you may find that you want to save a job to apply to later. This can be done by clicking the "Save Flag" that is in the top right corner of every job listing in the list of jobs seen on the left side of the homepage.</p>
+                    <img src="./images/save_jobs_button.png" alt="Click saved jobs flag to save a job." width="50%" class="my-4 border-2 border-black" />
+                    <p class="text-gray-700">A blue "Save Flag" indicates that the job is currently saved, while a clear "Save Flag" indicates that the job is not currently saved. To access all your saved jobs go to the "Saved Jobs" page via the Menu Bar. The saved jobs gives additional options (continue reading to learn what these buttons do) and looks like this: </p>
+                    <img src="./images/saved_jobs_page.png" alt="Access the saved jobs page via menu bar" width="50%" class="my-4 border-2 border-black" />
+                    <p class="text-gray-700">You can easily apply a saved job by clicking "Apply" which brings you to the job's application page, or you can remove a saved job by clicking "Remove". The "CL" button and "Compare" buttons are covered in other sections of this tutorial.</p>
+                </li>
+                <li>
+                    <h3 class="text-lg font-medium">Using the Menu Bar and Dropdown</h3>
+                    <p class="text-gray-700">To access features beyond what is offered by the homepage, you will need to use the dropdown menu which can be opened by clicking your profile picture in the top right corner of the page:</p>
+                    <img src="./images/dropdown.png" alt="Open the dropdown from the menu bar." width="50%" class="my-4 border-2 border-black" />
+                </li>
+            </ol>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 JobQuery. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
