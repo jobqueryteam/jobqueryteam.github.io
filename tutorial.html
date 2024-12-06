@@ -42,7 +42,28 @@
                             class="text-blue-500 font-bold" href="../tutorial.html">here</a>.</p>
                 </li>
                 <li>
-                    <h3 class="text-lg font-medium">Step 2: Running the backend</h3>
+                    <h3 class="text-lg font-medium">Step 2: Modifying files</h3>
+                    <p class="text-gray-700">
+                        The code is currently setup to make calls to a remote host. To run locally, a few files
+                        will need to be changed. In each of the files below, you will need to uncomment
+                        the line that is currently commented out and comment out the line that is not currently
+                        commented out. Images are provided and highlight the area in which the lines needing change are
+                        highlighted.
+                    </p>
+                    <p>jobquery/frontend/src/components/uploadresume/CompanyList.jsx</p>
+                    <img src="./images/company_list.png" alt="Image showing which lines to change in CompanyList.jsx" width="50%" class="my-4 border-2 border-black" />
+
+                    <p>jobquery/frontend/src/components/resumehelper/ResumeHelper.jsx</p>
+                    <img src="./images/resume_helper_api_change.png" alt="Image showing which lines to change in ResumeHelper.jsx" width="50%" class="my-4 border-2 border-black" />
+
+                    <p>jobquery/frontend/src/components/uploadresume/UploadButton.jsx</p>
+                    <img src="./images/upload_button.png" alt="Image showing which lines to change in UploadResume.jsx" width="50%" class="my-4 border-2 border-black" />
+
+                    <p>jobquery/frontend/src/utils/api.js</p>
+                    <img src="./images/company_list.png" alt="Image showing which lines to change in api.js" width="50%" class="my-4 border-2 border-black" />
+                </li>
+                <li>
+                    <h3 class="text-lg font-medium">Step 3: Running the backend</h3>
                     <p class="text-gray-700">Our backend uses FastAPI which is built on Python. To run the backend,
                         first ensure you have python and <a class="text-blue-500 font-bold"
                             href="https://python-poetry.org/docs/">poetry</a> installed. After installing these
@@ -54,7 +75,7 @@
                     </p>
                 </li>
                 <li>
-                    <h3 class="text-lg font-medium">Step 3: Running the frontend</h3>
+                    <h3 class="text-lg font-medium">Step 4: Running the frontend</h3>
                     <p class="text-gray-700">
                         Our frontend uses React. First ensure you <a class="text-blue-500 font-bold"
                             href="https://docs.npmjs.com">NPM</a> installed. After installing NPM, navigate to the
